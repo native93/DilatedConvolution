@@ -1,0 +1,33 @@
+# The train/test net protocol buffer definition
+#train_net: "proto/kitti_front_train.prototxt"
+#test_net: "proto/kitti_front_test.prototxt"
+train_net: "proto/final.prototxt"
+#test_net: "proto/dilation7_kitti_new_test.prototxt"
+# test_iter specifies how many forward passes the test should carry out.
+# In the case of MNIST, we have test batch size 100 and 100 test iterations,
+# covering the full 10,000 testing images.
+#test_iter: 46
+# Carry out testing every 500 training iterations.
+#test_interval: 500
+# The base learning rate, momentum and the weight decay of the network.
+# The learning rate policy
+lr_policy: "fixed"
+#gamma: 0.0001
+
+base_lr: 0.00001
+momentum: 0.99
+weight_decay: 0.0005
+
+#power: 0.75
+# Display every 100 iterations
+display: 100
+# The maximum number of iterations
+max_iter: 20000
+# snapshot intermediate results
+iter_size: 1
+snapshot: 5000
+snapshot_prefix: "snapshot/train"
+# solver mode: CPU or GPU
+#solver_type: SGD
+#solver_mode: GPU
+
