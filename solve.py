@@ -20,8 +20,8 @@ import os
 weights = './pretrained/dilation7_kitti.caffemodel'
 # init
 caffe.set_device(0)
-#caffe.set_mode_gpu()
-caffe.set_mode_cpu()
+caffe.set_mode_gpu()
+#caffe.set_mode_cpu()
 
 solver = caffe.SGDSolver('kitti_solver.prototxt')
 #solver.net.copy_from(weights)
