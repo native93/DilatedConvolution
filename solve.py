@@ -17,7 +17,7 @@ import os
 #weights = '../vgg16fc.caffemodel'
 
 
-weights = './pretrained/dilation7_kitti.caffemodel'
+#weights = './pretrained/dilation7_kitti.caffemodel'
 # init
 caffe.set_device(0)
 caffe.set_mode_gpu()

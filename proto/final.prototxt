@@ -29,7 +29,7 @@ layer {
     			offset: 186
   		}
   		image_dir: "dataset_kitti/Kitti/KITTI_SEMANTIC/train/RGB/"
-  		label_dir: "dataset_kitti/Kitti/KITTI_SEMANTIC/train/GT/"
+  		label_dir: "dataset_kitti/Kitti/KITTI_SEMANTIC/train/GT_new/"
   		padding: REFLECT
 	}
 }
